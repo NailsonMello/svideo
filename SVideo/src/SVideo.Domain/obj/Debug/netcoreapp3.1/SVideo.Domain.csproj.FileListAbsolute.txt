@@ -1,0 +1,8 @@
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Domain\bin\Debug\netcoreapp3.1\SVideo.Domain.deps.json
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Domain\bin\Debug\netcoreapp3.1\SVideo.Domain.dll
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Domain\bin\Debug\netcoreapp3.1\SVideo.Domain.pdb
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Domain\obj\Debug\netcoreapp3.1\SVideo.Domain.AssemblyInfoInputs.cache
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Domain\obj\Debug\netcoreapp3.1\SVideo.Domain.AssemblyInfo.cs
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Domain\obj\Debug\netcoreapp3.1\SVideo.Domain.dll
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Domain\obj\Debug\netcoreapp3.1\SVideo.Domain.pdb
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Domain\obj\Debug\netcoreapp3.1\SVideo.Domain.csprojAssemblyReference.cache

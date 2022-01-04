@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FluentScheduler" Version="5.5.1" />
+    <PackageReference Include="FluentValidation" Version="10.2.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.16" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="3.1.16" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.16" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SVideo.Domain\SVideo.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\Config\" />
+    <None Remove="Microsoft.Extensions.Configuration" />
+    <None Remove="Extensions\" />
+    <None Remove="Microsoft.AspNetCore.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Pagination\" />
+  </ItemGroup>
+
+</Project>

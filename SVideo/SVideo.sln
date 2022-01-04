@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{931AD6C9-E6EC-414C-9964-9080056C1EFC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVideo.API", "src\SVideo.API\SVideo.API.csproj", "{384505C8-CB79-41B5-AE86-B9115072F391}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F5028211-3062-42DC-9ABC-B9E66CCF7405} = {F5028211-3062-42DC-9ABC-B9E66CCF7405}
+		{74A57DC5-867D-417C-A7A2-A2CE412E4DF3} = {74A57DC5-867D-417C-A7A2-A2CE412E4DF3}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVideo.Domain", "src\SVideo.Domain\SVideo.Domain.csproj", "{1C2330C1-D45A-4744-B9E3-EA6E6ED2829F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVideo.Application", "src\SVideo.Application\SVideo.Application.csproj", "{74A57DC5-867D-417C-A7A2-A2CE412E4DF3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C2330C1-D45A-4744-B9E3-EA6E6ED2829F} = {1C2330C1-D45A-4744-B9E3-EA6E6ED2829F}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVideo.Infra", "src\SVideo.Infra\SVideo.Infra.csproj", "{F5028211-3062-42DC-9ABC-B9E66CCF7405}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1C2330C1-D45A-4744-B9E3-EA6E6ED2829F} = {1C2330C1-D45A-4744-B9E3-EA6E6ED2829F}
+		{74A57DC5-867D-417C-A7A2-A2CE412E4DF3} = {74A57DC5-867D-417C-A7A2-A2CE412E4DF3}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SVideo.Test", "src\SVideo.Test\SVideo.Test.csproj", "{BA88A6B1-5301-4BBF-8D43-7053B3A3B970}"
+	ProjectSection(ProjectDependencies) = postProject
+		{74A57DC5-867D-417C-A7A2-A2CE412E4DF3} = {74A57DC5-867D-417C-A7A2-A2CE412E4DF3}
+		{384505C8-CB79-41B5-AE86-B9115072F391} = {384505C8-CB79-41B5-AE86-B9115072F391}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SVideo.Scheduled", "src\SVideo.Scheduled\SVideo.Scheduled.csproj", "{52A0FD76-391C-4795-BF32-4151DDD3EB92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{384505C8-CB79-41B5-AE86-B9115072F391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384505C8-CB79-41B5-AE86-B9115072F391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384505C8-CB79-41B5-AE86-B9115072F391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384505C8-CB79-41B5-AE86-B9115072F391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2330C1-D45A-4744-B9E3-EA6E6ED2829F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2330C1-D45A-4744-B9E3-EA6E6ED2829F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2330C1-D45A-4744-B9E3-EA6E6ED2829F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2330C1-D45A-4744-B9E3-EA6E6ED2829F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74A57DC5-867D-417C-A7A2-A2CE412E4DF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74A57DC5-867D-417C-A7A2-A2CE412E4DF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74A57DC5-867D-417C-A7A2-A2CE412E4DF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74A57DC5-867D-417C-A7A2-A2CE412E4DF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5028211-3062-42DC-9ABC-B9E66CCF7405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5028211-3062-42DC-9ABC-B9E66CCF7405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5028211-3062-42DC-9ABC-B9E66CCF7405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5028211-3062-42DC-9ABC-B9E66CCF7405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA88A6B1-5301-4BBF-8D43-7053B3A3B970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA88A6B1-5301-4BBF-8D43-7053B3A3B970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA88A6B1-5301-4BBF-8D43-7053B3A3B970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA88A6B1-5301-4BBF-8D43-7053B3A3B970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A0FD76-391C-4795-BF32-4151DDD3EB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A0FD76-391C-4795-BF32-4151DDD3EB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A0FD76-391C-4795-BF32-4151DDD3EB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A0FD76-391C-4795-BF32-4151DDD3EB92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{384505C8-CB79-41B5-AE86-B9115072F391} = {931AD6C9-E6EC-414C-9964-9080056C1EFC}
+		{1C2330C1-D45A-4744-B9E3-EA6E6ED2829F} = {931AD6C9-E6EC-414C-9964-9080056C1EFC}
+		{74A57DC5-867D-417C-A7A2-A2CE412E4DF3} = {931AD6C9-E6EC-414C-9964-9080056C1EFC}
+		{F5028211-3062-42DC-9ABC-B9E66CCF7405} = {931AD6C9-E6EC-414C-9964-9080056C1EFC}
+		{BA88A6B1-5301-4BBF-8D43-7053B3A3B970} = {931AD6C9-E6EC-414C-9964-9080056C1EFC}
+		{52A0FD76-391C-4795-BF32-4151DDD3EB92} = {931AD6C9-E6EC-414C-9964-9080056C1EFC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA23E8AA-3A45-4C5C-8CD2-71C3B2E29240}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,457 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SVideo.API</name>
+    </assembly>
+    <members>
+        <member name="T:SVideo.API.AutoMapper.AutoMapperConfig">
+            <summary>
+            Auto Mapper Config Class
+            </summary>
+        </member>
+        <member name="M:SVideo.API.AutoMapper.AutoMapperConfig.#ctor">
+            <summary>
+            Class Constructor
+            </summary>
+        </member>
+        <member name="M:SVideo.API.AutoMapper.AutoMapperConfig.RegisterMapper">
+            <summary>
+            Register Mapper Method
+            </summary>
+            <returns>Mapper Configuration</returns>
+        </member>
+        <member name="T:SVideo.API.AutoMapper.AutoMapperProfile">
+            <summary>
+            Auto Mapper Profile Class
+            </summary>
+        </member>
+        <member name="M:SVideo.API.AutoMapper.AutoMapperProfile.#ctor">
+            <summary>
+            Mapper Class Constructor
+            </summary>
+        </member>
+        <member name="T:SVideo.API.AutoMapper.AutoMapperSetup">
+            <summary>
+            Auto Mapper Setup Class
+            </summary>
+        </member>
+        <member name="M:SVideo.API.AutoMapper.AutoMapperSetup.AddAutoMapperSetup(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add Auto Mapper Setup Method
+            </summary>
+            <param name="services">Service Collection</param>
+        </member>
+        <member name="T:SVideo.API.AutoMapper.Mappers.ServerMapper">
+            <summary>
+            Server Mapper
+            </summary>
+        </member>
+        <member name="M:SVideo.API.AutoMapper.Mappers.ServerMapper.Map(AutoMapper.Profile)">
+            <summary>
+            Map Method
+            </summary>
+            <param name="profile">Auto Mapper Profile Instance</param>
+        </member>
+        <member name="T:SVideo.API.AutoMapper.Mappers.VideoMapper">
+            <summary>
+            Video Mapper
+            </summary>
+        </member>
+        <member name="M:SVideo.API.AutoMapper.Mappers.VideoMapper.Map(AutoMapper.Profile)">
+            <summary>
+            Map Method
+            </summary>
+            <param name="profile">Auto Mapper Profile Instance</param>
+        </member>
+        <member name="T:SVideo.API.Configurations.ContextConfigurations">
+            <summary>
+            Context Configurations
+            </summary>
+        </member>
+        <member name="F:SVideo.API.Configurations.ContextConfigurations.MyLoggerFactory">
+            <summary>
+            Logger
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Configurations.ContextConfigurations.AddCustomDataContext(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add Custom Data Context
+            </summary>
+            <param name="services">Service Collection</param>
+            <param name="config">Configuration</param>
+        </member>
+        <member name="T:SVideo.API.Configurations.Converters.EmptyStringJsonConverter">
+            <summary>
+            Empty String Json Converter
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Configurations.Converters.EmptyStringJsonConverter.CanRead">
+            <summary>
+            Can Read
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Configurations.Converters.EmptyStringJsonConverter.CanWrite">
+            <summary>
+            Can Write
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Configurations.Converters.EmptyStringJsonConverter.CanConvert(System.Type)">
+            <summary>
+            Can Convert Method
+            </summary>
+            <param name="typeToConvert">Type of object</param>
+            <returns>Indicator if object can be converted</returns>
+        </member>
+        <member name="M:SVideo.API.Configurations.Converters.EmptyStringJsonConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Read Method
+            </summary>
+            <param name="reader">Json reader</param>
+            <param name="typeToConvert">Type to Convert</param>
+            <param name="options">Json Seralize Options</param>
+            <returns>Readed string</returns>
+        </member>
+        <member name="M:SVideo.API.Configurations.Converters.EmptyStringJsonConverter.Write(System.Text.Json.Utf8JsonWriter,System.String,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Write method 
+            </summary>
+            <param name="writer">Json Writer</param>
+            <param name="value">value to write</param>
+            <param name="options">Json Seralize Options</param>
+        </member>
+        <member name="T:SVideo.API.Configurations.DependencyInjection">
+            <summary>
+            Dependency Injection Class
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Configurations.DependencyInjection.AddDependencyInjection(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Dependency injection Configuration
+            </summary>
+            <param name="services"></param>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SVideo.API.Configurations.Filters.ExceptionHandlerFilterAttribute">
+            Filter Exception Attribute
+        </member>
+        <member name="M:SVideo.API.Configurations.Filters.ExceptionHandlerFilterAttribute.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Localization.IStringLocalizer{SVideo.Application.Resources.Resource})">
+            <summary>
+            Class Constructor
+            </summary>
+            <param name="env">Current Web Host Environment</param>
+            <param name="localizer">Localizer</param>
+        </member>
+        <member name="M:SVideo.API.Configurations.Filters.ExceptionHandlerFilterAttribute.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            Filter exception
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:SVideo.API.Configurations.Filters.ValidateModelStateFilterAttribute">
+            <summary>
+            Validate Model State Filter Attribute class
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Configurations.Filters.ValidateModelStateFilterAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            On Action Executing
+            </summary>
+            <param name="context">Action Executing Context</param>
+        </member>
+        <member name="T:SVideo.API.Configurations.HealthCheckConfig">
+            <summary>
+            Extension to configure Health check on startup
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Configurations.HealthCheckConfig.AddHealthCheckConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Method to config health check in Startup
+            </summary>
+            <param name="services"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:SVideo.API.Configurations.HealthCheckConfig.UseHealthCheckEndpoints(Microsoft.AspNetCore.Routing.IEndpointRouteBuilder)">
+            <summary>
+            Method to apply health check routes in Startup
+            </summary>
+            <param name="endpoints"></param>
+        </member>
+        <member name="T:SVideo.API.Configurations.StaticFilesConfigurations">
+            <summary>
+            Context Configurations
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Configurations.StaticFilesConfigurations.AddStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add Custom Data Context
+            </summary>
+            <param name="app">Appplication Builder</param>
+            <param name="config">Configuration</param>
+            <returns>Service Collection</returns>
+        </member>
+        <member name="T:SVideo.API.Controllers.RecyclerController">
+            <summary>
+            Recycler controller
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Controllers.RecyclerController.#ctor(AutoMapper.IMapper,SVideo.Application.Interfaces.IRecyclerService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:SVideo.API.Controllers.RecyclerController.Status">
+            <summary>
+            status running
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>status running</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.RecyclerController.Delete(System.Int32)">
+            <summary>
+            Removed videos
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Removed videos</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.RecyclerController.Update">
+            <summary>
+            Update videos
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Update videos</returns>
+        </member>
+        <member name="T:SVideo.API.Controllers.ServersController">
+            <summary>
+            Server controller
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.#ctor(AutoMapper.IMapper,SVideo.Application.Interfaces.IServerService,SVideo.Application.Interfaces.IVideoService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+            <param name="videoservice"></param>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.GetById(System.Guid)">
+            <summary>
+            Get server by id
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Server by id</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.GetAll">
+            <summary>
+            List server
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>List server</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.IsAvailable(System.Guid)">
+            <summary>
+            Check available server
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Server is available</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.Create(SVideo.API.Models.Request.ServerRequest)">
+            <summary>
+            Create new Server
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Server Created</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.Update(System.Guid,SVideo.API.Models.Request.ServerRequest)">
+            <summary>
+            Update Server
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Changed server</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.Delete(System.Guid)">
+            <summary>
+            Removed server
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Removed server</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.CreateVideo(System.Guid,SVideo.API.Models.Request.VideoRequest)">
+            <summary>
+            Create new Video
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Video Created</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.DeleteVideo(System.Guid,System.Guid)">
+            <summary>
+            Removed video
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Removed video</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.GetAllVideosByServerId(System.Guid)">
+            <summary>
+            List videos
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>List videos</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.GetVideoByIdAndServerId(System.Guid,System.Guid)">
+            <summary>
+            Get video by id and server id
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>video by id and server id</returns>
+        </member>
+        <member name="M:SVideo.API.Controllers.ServersController.Download(System.Guid,System.Guid)">
+            <summary>
+            Download video
+            </summary>
+            <response code="200">Server returns Ok</response>
+            <response code="400">Bussiness Exception</response>
+            <response code="500">Due to server problems, it is not possible to get your data now</response> 
+            <returns>Download video</returns>
+        </member>
+        <member name="T:SVideo.API.Models.Request.ServerRequest">
+            <summary>
+            Server Request
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Models.Request.ServerRequest.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Models.Request.ServerRequest.IpAddress">
+            <summary>
+            Ip Address
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Models.Request.ServerRequest.Port">
+            <summary>
+            Port
+            </summary>
+        </member>
+        <member name="T:SVideo.API.Models.Request.VideoRequest">
+            <summary>
+            Video Request
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Models.Request.VideoRequest.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Models.Request.VideoRequest.SizeInBytes">
+            <summary>
+            SizeInBytes
+            </summary>
+        </member>
+        <member name="T:SVideo.API.Models.Responses.BussinessExceptionResponse">
+            <summary>
+            Bussiness Exception Response
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Models.Responses.BussinessExceptionResponse.Success">
+            <summary>
+            Sucess
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Models.Responses.BussinessExceptionResponse.Error">
+            Error property
+        </member>
+        <member name="M:SVideo.API.Models.Responses.BussinessExceptionResponse.#ctor(System.Object)">
+            Constructor default
+        </member>
+        <member name="T:SVideo.API.Models.Responses.ServerErrorResponse">
+            <summary>
+            Server Error Response
+            </summary>
+        </member>
+        <member name="P:SVideo.API.Models.Responses.ServerErrorResponse.Error">
+            Error property
+        </member>
+        <member name="P:SVideo.API.Models.Responses.ServerErrorResponse.InnerException">
+            innerException property
+        </member>
+        <member name="P:SVideo.API.Models.Responses.ServerErrorResponse.StackTrace">
+            stackTrace property
+        </member>
+        <member name="M:SVideo.API.Models.Responses.ServerErrorResponse.#ctor(System.String,System.String,System.String)">
+            Constructor default
+        </member>
+        <member name="T:SVideo.API.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:SVideo.API.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Create Host Builder
+            </summary>
+            <param name="args">Arguments</param>
+            <returns>Host Builder</returns>
+        </member>
+        <member name="T:SVideo.API.Startup">
+            <summary>
+            Project Startup Class
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Class Constructor
+            </summary>
+            <param name="configuration">Config</param>
+        </member>
+        <member name="F:SVideo.API.Startup.Configuration">
+            <summary>
+            Config property
+            </summary>
+        </member>
+        <member name="M:SVideo.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+            <param name="services">Services Collection</param> 
+        </member>
+        <member name="M:SVideo.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <param name="app">Application builder</param>        
+            <param name="env">Environments</param>   
+        </member>
+    </members>
+</doc>

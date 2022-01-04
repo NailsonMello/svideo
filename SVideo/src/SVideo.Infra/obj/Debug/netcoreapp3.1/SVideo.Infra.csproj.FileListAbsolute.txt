@@ -1,0 +1,15 @@
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\SVideo.Infra.deps.json
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\SVideo.Infra.dll
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\SVideo.Infra.pdb
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\obj\Debug\netcoreapp3.1\SVideo.Infra.AssemblyInfoInputs.cache
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\obj\Debug\netcoreapp3.1\SVideo.Infra.AssemblyInfo.cs
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\obj\Debug\netcoreapp3.1\SVideo.Infra.dll
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\obj\Debug\netcoreapp3.1\SVideo.Infra.pdb
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\SVideo.Application.dll
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\SVideo.Domain.dll
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\SVideo.Application.pdb
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\SVideo.Domain.pdb
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\obj\Debug\netcoreapp3.1\SVideo.Infra.csprojAssemblyReference.cache
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\obj\Debug\netcoreapp3.1\SVideo.Infra.csproj.CopyComplete
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\en-US\SVideo.Application.resources.dll
+C:\Users\Naison\Documents\SVideo\SVideo\src\SVideo.Infra\bin\Debug\netcoreapp3.1\pt-BR\SVideo.Application.resources.dll

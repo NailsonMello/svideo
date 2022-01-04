@@ -1,0 +1,10 @@
+USE SVIDEO
+
+CREATE TABLE Recycler (
+	Id int NOT NULL,
+	IsRunning bit NOT NULL,
+	
+	CONSTRAINT Recycle_PK PRIMARY KEY (Id),
+);
+
+INSERT INTO Recycler VALUES (1, 0);
